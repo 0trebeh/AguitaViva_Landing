@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patty Wagon - Food Truck Gourmet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/+16892434927?text=Hola%20Patty%20Wagon!" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>Patty Wagon</h2>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Inicio</a></li>
+                    <li><a href="#menu" class="nav-link">Menú</a></li>
+                    <li><a href="#location" class="nav-link">Ubicación</a></li>
+                    <li><a href="#events" class="nav-link">Eventos</a></li>
+                    <li><a href="#gallery" class="nav-link">Galería</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="theme-toggle">
+                    <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambiar tema">
+                        <i class="fas fa-sun" id="theme-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+        </div>
+        <div class="hero-content">
+            <div class="hero-text fade-in-up">
+                <h1>Patty Wagon</h1>
+                <p class="hero-subtitle">Celebrando 10 años de sabor sobre ruedas</p>
+                <p class="hero-description">Las mejores hamburguesas gourmet de la ciudad, preparadas con amor y los ingredientes más frescos</p>
+                <div class="hero-buttons">
+                    <button class="cta-button pulse">¡Prueba nuestras hamburguesas!</button>
+                    <button class="cta-button-secondary">Ver Ubicación Actual</button>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-truck slide-in-right">
+                <img src="./img/truck.png" alt="Patty Wagon Food Truck">
+                <div class="anniversary-badge bounce">
+                    <span class="badge-number">10</span>
+                    <span class="badge-text">AÑOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <h2 class="countdown-title fade-in-up">Próxima Parada: Plaza Central</h2>
+            <div class="countdown-timer fade-in-up" id="countdown">
+                <div class="time-unit">
+                    <span class="time-number" id="days">00</span>
+                    <span class="time-label">Días</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="hours">00</span>
+                    <span class="time-label">Horas</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="minutes">00</span>
+                    <span class="time-label">Minutos</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-number" id="seconds">00</span>
+                    <span class="time-label">Segundos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promociones del Día -->
+    <section class="daily-promos">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Promociones de Hoy</h2>
+            <div class="promos-grid">
+                <div class="promo-card fade-in-up" data-delay="0">
+                    <div class="promo-badge">50% OFF</div>
+                    <img src="/placeholder.svg?height=200&width=300&text=Burger+Combo" alt="Combo Especial">
+                    <h3>Combo Especial</h3>
+                    <p>Hamburguesa + Papas + Bebida</p>
+                    <span class="promo-price">$12.99 <del>$25.98</del></span>
+                </div>
+                <div class="promo-card fade-in-up" data-delay="100">
+                    <div class="promo-badge">2x1</div>
+                    <img src="/placeholder.svg?height=200&width=300&text=Double+Burger" alt="Doble Hamburguesa">
+                    <h3>Martes de Dobles</h3>
+                    <p>Lleva 2 hamburguesas por el precio de 1</p>
+                    <span class="promo-price">Solo Martes</span>
+                </div>
+                <div class="promo-card fade-in-up" data-delay="200">
+                    <div class="promo-badge">NUEVO</div>
+                    <img src="/placeholder.svg?height=200&width=300&text=Veggie+Burger" alt="Hamburguesa Vegana">
+                    <h3>Veggie Deluxe</h3>
+                    <p>Nueva hamburguesa 100% vegana</p>
+                    <span class="promo-price">$14.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Nosotros -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text slide-in-left">
+                    <h2 class="section-title">Sobre Nosotros</h2>
+                    <p>Desde 2014, Patty Wagon ha sido más que un food truck: somos una pasión sobre ruedas. Comenzamos con un sueño simple: llevar las mejores hamburguesas gourmet directamente a tu vecindario.</p>
+                    <p>Nuestro compromiso con la calidad, ingredientes frescos y el servicio excepcional nos ha convertido en el food truck favorito de la ciudad.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="1000">0</span>
+                            <span class="stat-label">Hamburguesas Servidas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="500">0</span>
+                            <span class="stat-label">Eventos Atendidos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-target="10">0</span>
+                            <span class="stat-label">Años de Experiencia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image slide-in-right">
+                    <img src="/placeholder.svg?height=400&width=500&text=Chef+Cooking" alt="Chef preparando hamburguesas">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline - Cómo Empezó Todo -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Cómo Empezó Todo</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up" data-delay="0">
+                    <div class="timeline-year">2014</div>
+                    <div class="timeline-content">
+                        <h3>El Sueño Comienza</h3>
+                        <p>María y Carlos deciden convertir su pasión por la cocina en un negocio familiar.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up" data-delay="100">
+                    <div class="timeline-year">2015</div>
+                    <div class="timeline-content">
+                        <h3>Primer Food Truck</h3>
+                        <p>Compramos nuestro primer food truck y comenzamos a recorrer la ciudad.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up" data-delay="200">
+                    <div class="timeline-year">2018</div>
+                    <div class="timeline-content">
+                        <h3>Reconocimiento</h3>
+                        <p>Ganamos el premio "Mejor Food Truck" de la ciudad por segundo año consecutivo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up" data-delay="300">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h3>10 Años de Sabor</h3>
+                        <p>Celebramos una década sirviendo las mejores hamburguesas sobre ruedas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Platillos -->
+    <section id="menu" class="top-dishes">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Recomendaciones del Chef</h2>
+            <div class="dishes-grid">
+                <div class="dish-card fade-in-up" data-delay="0">
+                    <div class="dish-image">
+                        <img src="/placeholder.svg?height=250&width=350&text=Signature+Burger" alt="Hamburguesa Signature">
+                        <div class="dish-badge">Más Vendida</div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Patty Signature</h3>
+                        <p>Carne angus, queso cheddar añejo, bacon ahumado, cebolla caramelizada y nuestra salsa secreta</p>
+                        <div class="dish-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.9/5)</span>
+                        </div>
+                        <span class="dish-price">$16.99</span>
+                    </div>
+                </div>
+                <div class="dish-card fade-in-up" data-delay="100">
+                    <div class="dish-image">
+                        <img src="/placeholder.svg?height=250&width=350&text=BBQ+Burger" alt="Hamburguesa BBQ">
+                        <div class="dish-badge">Favorita</div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>BBQ Monster</h3>
+                        <p>Doble carne, salsa BBQ casera, aros de cebolla crujientes y queso pepper jack</p>
+                        <div class="dish-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="rating-text">(4.8/5)</span>
+                        </div>
+                        <span class="dish-price">$18.99</span>
+                    </div>
+                </div>
+                <div class="dish-card fade-in-up" data-delay="200">
+                    <div class="dish-image">
+                        <img src="/placeholder.svg?height=250&width=350&text=Veggie+Deluxe" alt="Hamburguesa Vegana">
+                        <div class="dish-badge">Nuevo</div>
+                    </div>
+                    <div class="dish-info">
+                        <h3>Veggie Deluxe</h3>
+                        <p>Hamburguesa de quinoa y frijoles negros, aguacate, tomate, lechuga y mayo vegana</p>
+                        <div class="dish-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="rating-text">(4.7/5)</span>
+                        </div>
+                        <span class="dish-price">$14.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel de Fotos -->
+    <section class="photo-carousel">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nuestras Delicias</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carousel-track">
+                    <div class="carousel-slide">
+                        <img src="/placeholder.svg?height=300&width=400&text=Delicious+Burger+1" alt="Hamburguesa Deliciosa 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/placeholder.svg?height=300&width=400&text=Delicious+Burger+2" alt="Hamburguesa Deliciosa 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/placeholder.svg?height=300&width=400&text=Delicious+Burger+3" alt="Hamburguesa Deliciosa 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/placeholder.svg?height=300&width=400&text=Delicious+Burger+4" alt="Hamburguesa Deliciosa 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="/placeholder.svg?height=300&width=400&text=Delicious+Burger+5" alt="Hamburguesa Deliciosa 5">
+                    </div>
+                </div>
+                <button class="carousel-btn prev" id="prev-btn">❮</button>
+                <button class="carousel-btn next" id="next-btn">❯</button>
+                <div class="carousel-dots" id="carousel-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Teaser -->
+    <section class="video-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Conoce Nuestra Historia</h2>
+            <div class="video-container fade-in-up">
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="video-overlay" id="video-overlay">
+                    <button class="play-button" id="play-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación en Tiempo Real -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Nuestra Ubicación Actual</h2>
+            <div class="location-content">
+                <div class="location-info slide-in-left">
+                    <div class="current-location">
+                        <h3><i class="fas fa-map-marker-alt"></i> Ahora Estamos En:</h3>
+                        <p class="location-name">Plaza del Sol</p>
+                        <p class="location-address">Av. Principal 123, Centro</p>
+                        <p class="location-time">Hasta las 8:00 PM</p>
+                        <div class="location-actions">
+                            <button class="location-btn">
+                                <i class="fas fa-directions"></i> Cómo Llegar
+                            </button>
+                            <button class="location-btn">
+                                <i class="fas fa-phone"></i> Llamar
+                            </button>
+                        </div>
+                    </div>
+                    <div class="next-locations">
+                        <h4>Próximas Ubicaciones:</h4>
+                        <div class="next-location-item">
+                            <span class="next-date">Mañana</span>
+                            <span class="next-place">Parque Central - 11:00 AM</span>
+                        </div>
+                        <div class="next-location-item">
+                            <span class="next-date">Jueves</span>
+                            <span class="next-place">Universidad - 12:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map slide-in-right">
+                    <div class="map-container">
+                        <img src="/placeholder.svg?height=400&width=600&text=Interactive+Map" alt="Mapa de Ubicación">
+                        <div class="map-overlay">
+                            <button class="map-btn">Ver Mapa Interactivo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ruta del Sabor -->
+    <section class="flavor-route">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Ruta del Sabor - Esta Semana</h2>
+            <div class="route-map fade-in-up">
+                <div class="route-day" data-day="lunes">
+                    <div class="day-marker">L</div>
+                    <div class="day-info">
+                        <h4>Lunes</h4>
+                        <p>Centro Comercial Norte</p>
+                        <span>10:00 AM - 6:00 PM</span>
+                    </div>
+                </div>
+                <div class="route-day" data-day="martes">
+                    <div class="day-marker active">M</div>
+                    <div class="day-info">
+                        <h4>Martes</h4>
+                        <p>Plaza del Sol</p>
+                        <span>11:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+                <div class="route-day" data-day="miercoles">
+                    <div class="day-marker">M</div>
+                    <div class="day-info">
+                        <h4>Miércoles</h4>
+                        <p>Zona Universitaria</p>
+                        <span>12:00 PM - 9:00 PM</span>
+                    </div>
+                </div>
+                <div class="route-day" data-day="jueves">
+                    <div class="day-marker">J</div>
+                    <div class="day-info">
+                        <h4>Jueves</h4>
+                        <p>Parque Central</p>
+                        <span>10:00 AM - 7:00 PM</span>
+                    </div>
+                </div>
+                <div class="route-day" data-day="viernes">
+                    <div class="day-marker">V</div>
+                    <div class="day-info">
+                        <h4>Viernes</h4>
+                        <p>Distrito Financiero</p>
+                        <span>11:00 AM - 8:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendario de Eventos -->
+    <section id="events" class="events-calendar">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Próximos Eventos</h2>
+            <div class="calendar-grid">
+                <div class="event-card fade-in-up" data-delay="0">
+                    <div class="event-date">
+                        <span class="event-day">15</span>
+                        <span class="event-month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Festival de Food Trucks</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Parque de la Ciudad</p>
+                        <p><i class="fas fa-clock"></i> 12:00 PM - 10:00 PM</p>
+                        <button class="event-btn">Más Info</button>
+                    </div>
+                </div>
+                <div class="event-card fade-in-up" data-delay="100">
+                    <div class="event-date">
+                        <span class="event-day">22</span>
+                        <span class="event-month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Evento Corporativo</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Empresa TechCorp</p>
+                        <p><i class="fas fa-clock"></i> 1:00 PM - 3:00 PM</p>
+                        <button class="event-btn">Reservar</button>
+                    </div>
+                </div>
+                <div class="event-card fade-in-up" data-delay="200">
+                    <div class="event-date">
+                        <span class="event-day">28</span>
+                        <span class="event-month">MAR</span>
+                    </div>
+                    <div class="event-info">
+                        <h3>Noche de Hamburguesas</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Plaza Central</p>
+                        <p><i class="fas fa-clock"></i> 6:00 PM - 11:00 PM</p>
+                        <button class="event-btn">Asistir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Instagram -->
+    <section id="gallery" class="instagram-gallery">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Síguenos en Instagram</h2>
+            <p class="gallery-subtitle fade-in-up">@pattywagon_official</p>
+            <div class="instagram-grid">
+                <div class="instagram-post fade-in-up" data-delay="0">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+1" alt="Instagram Post 1">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 245</span>
+                            <span><i class="fas fa-comment"></i> 12</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-post fade-in-up" data-delay="50">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+2" alt="Instagram Post 2">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 189</span>
+                            <span><i class="fas fa-comment"></i> 8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-post fade-in-up" data-delay="100">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+3" alt="Instagram Post 3">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 312</span>
+                            <span><i class="fas fa-comment"></i> 15</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-post fade-in-up" data-delay="150">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+4" alt="Instagram Post 4">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 156</span>
+                            <span><i class="fas fa-comment"></i> 6</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-post fade-in-up" data-delay="200">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+5" alt="Instagram Post 5">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 278</span>
+                            <span><i class="fas fa-comment"></i> 11</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instagram-post fade-in-up" data-delay="250">
+                    <img src="/placeholder.svg?height=300&width=300&text=Instagram+Post+6" alt="Instagram Post 6">
+                    <div class="post-overlay">
+                        <div class="post-stats">
+                            <span><i class="fas fa-heart"></i> 203</span>
+                            <span><i class="fas fa-comment"></i> 9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="instagram-btn fade-in-up">Ver Más en Instagram</button>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Lo Que Dicen Nuestros Clientes</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"Las mejores hamburguesas que he probado en mi vida. El servicio es excepcional y siempre están en los mejores lugares de la ciudad."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60&text=Cliente+1" alt="María González">
+                            <div class="author-info">
+                                <h4>María González</h4>
+                                <span>Cliente Frecuente</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"Contraté Patty Wagon para el evento de mi empresa y fue un éxito total. Todos quedaron encantados con la comida y el servicio."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60&text=Cliente+2" alt="Carlos Ruiz">
+                            <div class="author-info">
+                                <h4>Carlos Ruiz</h4>
+                                <span>Gerente de Eventos</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p>"La hamburguesa vegana es increíble. Nunca pensé que una hamburguesa sin carne podría ser tan deliciosa. ¡Altamente recomendado!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="/placeholder.svg?height=60&width=60&text=Cliente+3" alt="Ana López">
+                            <div class="author-info">
+                                <h4>Ana López</h4>
+                                <span>Amante de la Comida Vegana</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-dots" id="testimonial-dots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificaciones -->
+    <section class="certifications">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Certificaciones y Calidad</h2>
+            <div class="cert-grid">
+                <div class="cert-item fade-in-up" data-delay="0">
+                    <img src="/placeholder.svg?height=100&width=100&text=Health+Cert" alt="Certificación de Salud">
+                    <h3>Certificación Sanitaria</h3>
+                    <p>Cumplimos con todos los estándares de higiene y seguridad alimentaria</p>
+                </div>
+                <div class="cert-item fade-in-up" data-delay="100">
+                    <img src="/placeholder.svg?height=100&width=100&text=Quality+Cert" alt="Certificación de Calidad">
+                    <h3>Calidad Premium</h3>
+                    <p>Ingredientes seleccionados y procesos de calidad certificados</p>
+                </div>
+                <div class="cert-item fade-in-up" data-delay="200">
+                    <img src="/placeholder.svg?height=100&width=100&text=Eco+Cert" alt="Certificación Ecológica">
+                    <h3>Compromiso Ecológico</h3>
+                    <p>Prácticas sostenibles y empaques biodegradables</p>
+                </div>
+                <div class="cert-item fade-in-up" data-delay="300">
+                    <img src="/placeholder.svg?height=100&width=100&text=Local+Cert" alt="Certificación Local">
+                    <h3>Producto Local</h3>
+                    <p>Apoyamos a productores locales y la economía de la región</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Preguntas Frecuentes</h2>
+            <div class="faq-container">
+                <div class="faq-item fade-in-up" data-delay="0">
+                    <div class="faq-question">
+                        <h3>¿Cómo puedo saber dónde están ubicados?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualizamos nuestra ubicación en tiempo real en nuestra página web y redes sociales. También puedes llamarnos al (555) 123-4567 para conocer nuestra ubicación actual.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up" data-delay="100">
+                    <div class="faq-question">
+                        <h3>¿Hacen entregas a domicilio?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Actualmente no hacemos entregas a domicilio, pero puedes hacer pedidos por adelantado y recogerlos en nuestra ubicación actual. ¡Estamos trabajando en un servicio de delivery!</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up" data-delay="200">
+                    <div class="faq-question">
+                        <h3>¿Tienen opciones vegetarianas y veganas?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Por supuesto! Tenemos hamburguesas vegetarianas y veganas deliciosas, así como opciones sin gluten. Pregunta por nuestro menú especial.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up" data-delay="300">
+                    <div class="faq-question">
+                        <h3>¿Puedo contratar sus servicios para eventos privados?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>¡Absolutamente! Ofrecemos servicios de catering para bodas, eventos corporativos, fiestas privadas y más. Contáctanos para una cotización personalizada.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up" data-delay="400">
+                    <div class="faq-question">
+                        <h3>¿Aceptan tarjetas de crédito?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, aceptamos efectivo, tarjetas de crédito, débito y pagos móviles como Apple Pay y Google Pay.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Únete al Equipo -->
+    <section class="join-team">
+        <div class="container">
+            <div class="team-content">
+                <div class="team-text slide-in-left">
+                    <h2 class="section-title">Únete a Nuestro Equipo</h2>
+                    <p>¿Te apasiona la comida y el servicio al cliente? ¡Estamos buscando personas como tú para unirse a la familia Patty Wagon!</p>
+                    <div class="job-positions">
+                        <div class="job-item">
+                            <h4>Cocinero/a</h4>
+                            <p>Experiencia en cocina, pasión por la calidad</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Cajero/a</h4>
+                            <p>Atención al cliente, manejo de caja</p>
+                        </div>
+                        <div class="job-item">
+                            <h4>Asistente General</h4>
+                            <p>Apoyo en todas las áreas, tiempo parcial disponible</p>
+                        </div>
+                    </div>
+                    <button class="apply-btn">Enviar CV</button>
+                </div>
+                <div class="team-image slide-in-right">
+                    <img src="/placeholder.svg?height=400&width=500&text=Happy+Team" alt="Equipo Feliz">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Contáctanos</h2>
+            <div class="contact-content">
+                <div class="contact-info slide-in-left">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Teléfono</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@pattywagon.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Ubicación Base</h4>
+                            <p>123 Food Street, Ciudad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Horarios</h4>
+                            <p>Lun-Dom: 10:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-media">
+                        <h4>Síguenos</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form slide-in-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Tu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Selecciona un tema</option>
+                                <option value="catering">Servicio de Catering</option>
+                                <option value="event">Evento Privado</option>
+                                <option value="feedback">Comentarios</option>
+                                <option value="other">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Llamado a la Acción Final -->
+    <section class="final-cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>¿Listo para la Mejor Hamburguesa de Tu Vida?</h2>
+                <p>Ven y descubre por qué somos el food truck favorito de la ciudad. ¡Te esperamos con los brazos abiertos y las hamburguesas más deliciosas!</p>
+                <div class="cta-buttons">
+                    <button class="cta-primary">Encontrar Ubicación</button>
+                    <button class="cta-secondary">Llamar Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Patty Wagon</h3>
+                        <p>10 años sirviendo las mejores hamburguesas sobre ruedas</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#location">Ubicación</a></li>
+                        <li><a href="#events">Eventos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#">Catering</a></li>
+                        <li><a href="#">Eventos Privados</a></li>
+                        <li><a href="#">Pedidos Especiales</a></li>
+                        <li><a href="#">Franquicias</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@pattywagon.com</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Patty Wagon. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
