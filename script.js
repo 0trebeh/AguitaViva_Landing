@@ -1,16 +1,16 @@
 // Mobile Navigation Toggle
-const hamburger = document.getElementById("hamburger")
+const beverage = document.getElementById("beverage")
 const navMenu = document.getElementById("nav-menu")
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active")
+beverage.addEventListener("click", () => {
+  beverage.classList.toggle("active")
   navMenu.classList.toggle("active")
 })
 
 // Close mobile menu when clicking on a link
 document.querySelectorAll(".nav-link").forEach((n) =>
   n.addEventListener("click", () => {
-    hamburger.classList.remove("active")
+    beverage.classList.remove("active")
     navMenu.classList.remove("active")
   }),
 )
@@ -54,34 +54,6 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll(".fade-in-up, .slide-in-left, .slide-in-right").forEach((el) => {
   observer.observe(el)
 })
-
-// Countdown Timer
-function updateCountdown() {
-  const targetDate = new Date()
-  targetDate.setDate(targetDate.getDate() + 2) // 2 days from now
-  targetDate.setHours(11, 0, 0, 0) // 11:00 AM
-
-  const now = new Date().getTime()
-  const distance = targetDate.getTime() - now
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24))
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000)
-
-  document.getElementById("days").textContent = days.toString().padStart(2, "0")
-  document.getElementById("hours").textContent = hours.toString().padStart(2, "0")
-  document.getElementById("minutes").textContent = minutes.toString().padStart(2, "0")
-  document.getElementById("seconds").textContent = seconds.toString().padStart(2, "0")
-
-  if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "<h3>¡Ya estamos aquí!</h3>"
-  }
-}
-
-// Update countdown every second
-setInterval(updateCountdown, 1000)
-updateCountdown()
 
 // Photo Carousel
 let currentSlide = 0
@@ -142,50 +114,6 @@ if (videoOverlay && playButton) {
     videoOverlay.style.display = "none"
     // In a real implementation, you would start the video here
   })
-}
-
-// Testimonials Slider
-let currentTestimonial = 0
-const testimonials = document.querySelectorAll(".testimonial-card")
-const totalTestimonials = testimonials.length
-
-function updateTestimonials() {
-  const track = document.getElementById("testimonial-track")
-  if (track) {
-    track.style.transform = `translateX(-${currentTestimonial * 100}%)`
-
-    // Update dots
-    document.querySelectorAll(".testimonial-dot").forEach((dot, index) => {
-      dot.classList.toggle("active", index === currentTestimonial)
-    })
-  }
-}
-
-function createTestimonialDots() {
-  const dotsContainer = document.getElementById("testimonial-dots")
-  if (dotsContainer) {
-    for (let i = 0; i < totalTestimonials; i++) {
-      const dot = document.createElement("div")
-      dot.classList.add("testimonial-dot")
-      if (i === 0) dot.classList.add("active")
-      dot.addEventListener("click", () => {
-        currentTestimonial = i
-        updateTestimonials()
-      })
-      dotsContainer.appendChild(dot)
-    }
-  }
-}
-
-// Initialize testimonials
-if (testimonials.length > 0) {
-  createTestimonialDots()
-
-  // Auto-play testimonials
-  setInterval(() => {
-    currentTestimonial = (currentTestimonial + 1) % totalTestimonials
-    updateTestimonials()
-  }, 6000)
 }
 
 // FAQ Toggle
@@ -340,12 +268,6 @@ document.querySelectorAll(".cert-item").forEach((item, index) => {
   item.addEventListener("animationend", () => {
     item.style.animation = ""
   })
-})
-
-// Initialize all components when DOM is loaded
-document.addEventListener("DOMContentLoaded", () => {
-  // Set initial countdown
-  updateCountdown()
 })
 
 // Theme Toggle Functionality
