@@ -9,12 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- WhatsApp Floating Button -->
-    <div class="whatsapp-float">
-        <a href="https://www.doordash.com/store/taco-bell-kissimmee-2433712/23427964/" target="_blank" class="whatsapp-btn">
-            <img src="./img/doordash.png" alt="doordash">
-        </a>
-    </div>
 
     <!-- Header -->
     <header class="header">
@@ -153,7 +147,7 @@
                     </div>
                     <div class="dish-info">
                         <h3>Patty Signature</h3>
-                        <p>Carne angus, queso cheddar añejo, bacon ahumado, cebolla caramelizada y nuestra salsa secreta</p>
+                        <p>Carne angus, queso cheddar añejo, cebolla caramelizada y nuestra salsa secreta</p>
                         <div class="dish-rating">
                             <span class="stars">★★★★★</span>
                             <span class="rating-text">(4.9/5)</span>
@@ -302,7 +296,7 @@
                 </div>
                 <div class="location-map slide-in-right">
                     <div class="map-container">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3509.83420780079!2d-81.37667493415043!3d28.394075083890563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa!5e0!3m2!1ses!2sus!4v1755185491603!5m2!1ses!2sus" width="600" height="366" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3509.83420780079!2d-81.37667493415043!3d28.394075083890563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smapa!5e0!3m2!1ses!2sus!4v1755185491603!5m2!1ses!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -456,7 +450,6 @@
                                 <span>Cliente Frecuente</span>
                             </div>
                         </div>
-                        <br/>
                         <div class="testimonial-content">
                             <div class="stars">★★★★★</div>
                             <p>"Las mejores Bebidas que he probado en mi vida. El servicio es excepcional y siempre están en los mejores lugares de la ciudad."</p>
@@ -469,7 +462,6 @@
                                 <span>Gerente de Eventos</span>
                             </div>
                         </div>
-                        <br/>
                         <div class="testimonial-content">
                             <div class="stars">★★★★★</div>
                             <p>"Contraté Agüita Viva para el evento de mi empresa y fue un éxito total. Todos quedaron encantados con la comida y el servicio."</p>
@@ -482,7 +474,6 @@
                                 <span>Amante de la Comida Vegana</span>
                             </div>
                         </div>
-                        <br/>
                         <div class="testimonial-content">
                             <div class="stars">★★★★★</div>
                             <p>"La Bebidas vegana es increíble. Nunca pensé que una Bebidas sin carne podría ser tan deliciosa. ¡Altamente recomendado!"</p>
@@ -591,9 +582,6 @@
                             <p>Apoyo en todas las áreas, tiempo parcial disponible</p>
                         </div>
                     </div>
-                    <div class="btn-join-team">
-                        <button class="cta-primary">Contáctanos</button>
-                    </div>
                 </div>
                 <div class="team-image slide-in-right">
                     <img src="./img/reclut.png" alt="Equipo Feliz">
@@ -652,19 +640,13 @@
                             <input type="text" id="name" name="name" placeholder="Tu Nombre" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Tu Email" type="email" required>
+                            <input type="email" id="email" name="email" placeholder="Tu Email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono" type="tel" required>
+                            <input type="tel" id="phone" name="phone" placeholder="Tu Teléfono" required>
                         </div>
                         <div class="form-group">
-                            <select id="subject" name="subject" required>
-                                <option value="" disabled selected hidden>Selecciona un tema</option>
-                                <option value="catering">Servicio de Catering</option>
-                                <option value="event">Evento Privado</option>
-                                <option value="feedback">Comentarios</option>
-                                <option value="other">Otro</option>
-                            </select>
+                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" placeholder="Tu Mensaje" rows="5" required></textarea>
@@ -680,10 +662,10 @@
     <section class="final-cta">
         <div class="container">
             <div class="cta-content fade-in-up">
-                <h2>¿Listo para la Mejor Bebidas de Tu Vida?</h2>
+                <h2>¿Listo para la Mejor Bebida de Tu Vida?</h2>
                 <p>Ven y descubre por qué somos el food truck favorito de la ciudad. ¡Te esperamos con los brazos abiertos y las Bebidas más deliciosas!</p>
                 <div class="cta-buttons">
-                    <button class="cta-primary">Encontrar Ubicación</button>
+                    <button class="cta-primary" onclick="location.href='#location'">Encontrar Ubicación</button>
                     <button class="cta-secondary">Llamar Ahora</button>
                 </div>
             </div>
